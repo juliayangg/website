@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:image" content="juliayang.co/images/headshot1.png"/>
+  <meta property="og:description" content="Julia Yang's personal site." />
+  <meta property="og:title" content="Julia Yang" />
+  <title>Julia Yang</title>
+
+  <link rel="icon" href="images/watermelon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,500" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="css/magnific-popup-css.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/magnific-popup.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+   <script type="text/javascript" src="js/main.js"></script>
+
+
+  <script>
+  $(document).ready(function() {
+
+    $('.image-popup-vertical-fit').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      mainClass: 'mfp-img-mobile',
+      image: {
+        verticalFit: true
+      }
+
+    });
+
+    $('.image-popup-fit-width').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      image: {
+        verticalFit: false
+      }
+    });
+
+    $('.image-popup-no-margins').magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
+
+    $('.popup-gallery').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      tLoading: 'Loading image #%curr%...',
+      mainClass: 'mfp-img-mobile',
+      gallery: {
+        enabled: true,
+        navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+        return item.el.attr('title') + '<small>by Julia Yang</small>';
+      }
+    }
+  });
+  });
+
+</script>
+</head>
+
+<body>
+
+ <div id="wrapper">
+
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+      </li>
+      <li>
+        <a href="#title" class="smoothScroll hvr-underline-from-right">About</a>
+      </li>
+      <li>
+        <a href="#project" class="smoothScroll hvr-underline-from-right">Projects</a>
+      </li>
+      <li>
+        <a href="#art" class="smoothScroll hvr-underline-from-right">Portfolio</a>
+      </li>
+      <li>
+        <a href="/docs/resume.pdf" target="_blank" class="hvr-underline-from-right">CV</a>
+      </li>
+      <li>
+        <a href="#contact" class="smoothScroll hvr-underline-from-right">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- /#sidebar-wrapper -->
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+       <div id="title">Julia Yang</div>
+       <hr> 
+       <div id="spacing" class="description"> 
+        Hi I'm Julia. I'm currently a sophomore at Cornell University studying Computer Science, originally from the Washington D.C. Metro area. I have an interest in web application development and web design. In my free time, I love volunteering and <a href="/travels">travelling</a>. 
+
+        <br><br>
+        Here's a snapshot of my previous experience:
+        <section class="timeline">
+          <ul>
+            <li>
+              <div class="item">
+                <time>2014</time> <loc>Bethesda, MD</loc> <br> Intern at National Insitutes of Health
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <time>2015</time> <loc>Ithaca, New York</loc> <br> Started school at Cornell University
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <time>2016</time> <loc>Washington D.C.</loc> <br> Intern at DDC Public Affairs <br> 
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <time>2017</time> <loc>Redmond, Washington</loc> <br> Incoming Microsoft Explore intern
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        On campus, I am involved in ACSU, SWE, along with:
+        <br><br>
+
+        <div class="row">
+          <div class="col-md-6 cols">
+            <b> Alpha Phi Omega, Gamma Chapter</b><br>
+            Webmaster: Spring 2016
+          </div>
+          <div class="col-md-6 cols">
+            <b>Women in Computing at Cornell</b><br>
+            Website Director: Spring 2017
+          </div>
+        </div> 
+      </div>
+    </div>
+    <!-- /#row About -->
+
+    <div class="row">
+     <div id="projects" style="padding-bottom: 50px;">
+       <div class="smallTitle" id="project">Projects
+        <hr></div>
+        <div class="titles" >
+          <div class="row"><center>
+            <div class="col-md-6 cols"><div class="proj">Big Red Hacks</div><br><br>
+            <span class="content">iPhone application aimed to shorten <br>shower times through music.
+              <br><br>
+              <a class="image-popup-no-margins" href="images/shower.jpg">
+                <img src="images/shower.jpg" height="275">
+              </a>
+
+              <!-- <br><a href="https://bigredhacks2016.hackerearth.com/sprints/bigredhacks-fall-2016/teams/871a8bc/submission/" target="_blank">HackerEarth + Github</a> </span>--></div> 
+
+              <div class="col-md-6 cols"><div class="proj">Random Hacks of Kindness</div><br><br>
+              <span class="content">Java based application to store volunteer information and record sign ups. <br>Partnered with the AFYA Foundation.
+                <br><br>
+
+                <a class="image-popup-no-margins" href="images/afya-2.jpg">
+                  <img src="images/afya-2.jpg" height="120" style="margin-bottom:5px">
+                </a>
+                <br>
+                <a class="image-popup-no-margins" href="images/rhokteam.jpg">
+                  <img src="images/rhokteam.jpg" height="140">
+                </a>
+
+                <!--<br><br><p>Amazon AWS link coming soon!</span>-->
+              </div>
+            </center></div>
+          </div> 
+        </div>
+      </div>
+      <!-- /#row Projects --> 
+
+      <div class="row">
+       <div class="smallTitle" id="art">Art<hr></div>
+       <div id="spacing" class="description">Growing up, I always took an interest in art. It was my favorite subject in elementary school; there was something about it that was just so relaxing. I've worked with a variety of media, including charcoal, color pencil, and acrylic. I'm also learning more about photography. <br><br><br>
+
+        <center>
+          <div class="popup-gallery">
+            <a href="art/IMG_9317.jpg" title="Autumn"><img src="art/IMG_9317.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9321.jpg" title="American Wigeon"><img src="art/IMG_9321.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9326.jpg" title="Sailboat Sunset"><img src="art/IMG_9326.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9329.jpg" title="Three Musketeers"><img src="art/IMG_9329.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9332.jpg" title="Wisdom"><img src="art/IMG_9332.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9333.jpg" title="Laugh"><img src="art/IMG_9333.jpg" width="75" height="75"></a>
+            <a href="art/IMG_9335.jpg" title="Time For a Walk"><img src="art/IMG_9335.jpg" width="75" height="75"></a>
+          </div>
+        </center>
+      </div>
+    </div> 
+    <!-- /#row Art -->
+
+    <div id="contactPage" class="row">
+     <div class="smallTitle" id="contact">Contact<hr></div>
+     <div id="spacing" class="description">Feel free to contact me at <a href="#"> jwy37@cornell.edu</a> <br><br>
+     <ul id="contactlist">
+      <li><a href="https://www.github.com/juliayangg" target="_blank"><img src="images/github.png" height="30" width="30"/></a></li>
+      <li><a href="https://www.linkedin.com/in/juliayangg" target="_blank"><img src="images/linkedin.png" height="30" width="30"/></a></li>
+     <li><a href="https://www.youtube.com/channel/UCko3JpcbpCznNGh7_E-GjGQ?view_as=subscriber" target="_blank"><img src="images/youtube.png" height="30" width="30"/></a></li>
+   </ul>
+    </div>
+
+
+   </div> 
+   <!-- /#row Contact -->
+
+ </div>
+</div>
+</div>
+<!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+</body>
